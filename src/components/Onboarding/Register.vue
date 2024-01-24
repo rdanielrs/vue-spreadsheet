@@ -4,10 +4,10 @@
 
 <template>
     <div class="login">
-        <h1>Login</h1>
+        <h1>Register Account</h1>
         <div class="login-form">
             <span>Email address</span>
-            <input placeholder="user-email" type="text">
+            <input placeholder="useremail@email.com" type="text">
         </div>
 
         <div class="login-form">
@@ -29,14 +29,17 @@
             Sign up
         </button>
 
-        <button class="no-account">
-           No account? Sign up
-        </button>
+        <RouterLink to="/">
+            <button class="no-account">
+                Already a member? Sign in
+            </button>
+        </RouterLink>
+
     </div>
 
 </template>
 
-<style>
+<style scoped>
 
 .login {
     padding: 25px;
@@ -57,8 +60,6 @@
     }
 
     button {
-        width: 240px;
-        height: 50px;
         margin-bottom: 15px;
         border: 0;
         border-radius: 8px;
@@ -96,13 +97,20 @@
     font-size: 24px;
     border-radius: 10px;
     color: #fff;
+    width: 240px;
+    height: 50px;
 }
 
 .no-account {
     background: transparent;
     font-size: 18px;
     color: #2667ff;
+    height: 20px;
     
+}
+
+a:hover {
+    height: fit-content;
 }
 
 

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 //import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
-import Login from './components/Onboarding/Login.vue'
+/*import SignIn from './views/SignIn.vue';
+import Login from './components/Onboarding/Login.vue'*/
 import router from './router';
 </script>
 
@@ -29,8 +30,9 @@ import router from './router';
 </template>-->
 
 <template>
+  <!--<Header/>-->
   <Header/>
-  
+  <RouterView/>
 </template>
 
 
